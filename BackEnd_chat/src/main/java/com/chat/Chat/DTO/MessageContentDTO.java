@@ -16,4 +16,5 @@ public class MessageContentDTO {
     private UUID messageRoomId;
     private String sender;
 
+
 }

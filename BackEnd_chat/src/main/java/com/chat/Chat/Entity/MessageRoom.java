@@ -37,4 +37,5 @@ public class MessageRoom {
     @OneToMany(mappedBy = "messageRoom" , cascade = CascadeType.ALL)
     private List<MessageContent> messageContents;
 
+
 }

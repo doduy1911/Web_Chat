@@ -34,4 +34,53 @@ public class MessageContent {
     @ManyToOne
     @JoinColumn(name = "username")
     private User user;
+
+
+    public UUID getId() {
+        return id;
+    }
+
+    public void setId(UUID id) {
+        this.id = id;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public LocalDateTime getDataSent() {
+        return dataSent;
+    }
+
+    public void setDataSent(LocalDateTime dataSent) {
+        this.dataSent = dataSent;
+    }
+
+    public MessageType getMessageType() {
+        return messageType;
+    }
+
+    public void setMessageType(MessageType messageType) {
+        this.messageType = messageType;
+    }
+
+    public MessageRoom getMessageRoom() {
+        return messageRoom;
+    }
+
+    public void setMessageRoom(MessageRoom messageRoom) {
+        this.messageRoom = messageRoom;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }
