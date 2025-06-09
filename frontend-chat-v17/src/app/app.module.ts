@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, provideClientHydration, withEventReplay } from '@angular/platform-browser';
+import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PrimengModule } from './primeng/primeng.module';
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -12,10 +12,10 @@ import { PrimengModule } from './primeng/primeng.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PrimengModule
+    ButtonModule
   ],
   providers: [
-    provideClientHydration(withEventReplay())
+    provideClientHydration()
   ],
   bootstrap: [AppComponent]
 })
