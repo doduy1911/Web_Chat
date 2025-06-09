@@ -26,5 +26,5 @@ public class User {
     private List<MessageRoom> messagesRoom;
 
     @OneToMany(mappedBy = "user")
-    private List<MessageRoomMenber> messagesRoomMembers;
+    private List<MessageRoomMember> messagesRoomMembers;
 }

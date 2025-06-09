@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface MessageRoomReponsitory extends JpaRepository<MessageRoom, UUID> {
+public interface messageRoomRepository extends JpaRepository<MessageRoom, UUID> {
 }

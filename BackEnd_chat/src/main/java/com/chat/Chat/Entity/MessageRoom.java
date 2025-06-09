@@ -32,7 +32,7 @@ public class MessageRoom {
     private User createdBy;
 
     @OneToMany(mappedBy = "messageRoom" , cascade = CascadeType.ALL)
-    private List<MessageRoomMenber>  members;
+    private List<MessageRoomMember>  members;
 
     @OneToMany(mappedBy = "messageRoom" , cascade = CascadeType.ALL)
     private List<MessageContent> messageContents;

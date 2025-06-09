@@ -1,19 +1,24 @@
 package com.chat.Chat.Entity;
 
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import java.time.LocalDateTime;
 
 @Entity
+@Table(name = "message_room_member")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "message_room_member")
-@IdClass(MessageRoomMenber.class)
-public class MessageRoomMenber {
+@IdClass(MessageroomMenberKey.class)
+@Builder
+public class MessageRoomMember {
     @Id
     @ManyToOne
     @JoinColumn(name = "message_room_id")
@@ -24,8 +29,7 @@ public class MessageRoomMenber {
     @JoinColumn(name = "username")
     private User user;
 
-    private Boolean isAdmin ;
+    private Boolean isAdmin;
 
     private LocalDateTime lastSeen;
-
 }

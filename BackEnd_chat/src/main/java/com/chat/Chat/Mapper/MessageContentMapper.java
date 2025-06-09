@@ -1,7 +1,7 @@
 package com.chat.Chat.Mapper;
 
-import com.chat.Chat.DAO.MessageRoomReponsitory;
-import com.chat.Chat.DAO.UserReponsitory;
+import com.chat.Chat.DAO.messageRoomRepository;
+import com.chat.Chat.DAO.userRepository;
 import com.chat.Chat.DTO.MessageContentDTO;
 import com.chat.Chat.Entity.MessageContent;
 import com.chat.Chat.Entity.MessageRoom;
@@ -12,8 +12,8 @@ import org.springframework.stereotype.Component;
 @Component
 @RequiredArgsConstructor
 public class MessageContentMapper {
-    private final MessageRoomReponsitory messageRoomReponsitory;
-    private final UserReponsitory userReponsitory;
+    private final messageRoomRepository messageRoomReponsitory;
+    private final userRepository userReponsitory;
 
     public MessageContentDTO toDTO(final MessageContent messageContent, final MessageContentDTO messageContentDTO) {
         messageContentDTO.setId(messageContent.getId());
