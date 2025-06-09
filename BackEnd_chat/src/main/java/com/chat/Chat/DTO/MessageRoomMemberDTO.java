@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Data
-public class MessageRoomMenberDTO {
+public class MessageRoomMemberDTO {
     private UUID messageRoomId;
     private String username;
     private Boolean isAdmin;
