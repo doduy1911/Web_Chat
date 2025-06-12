@@ -18,3 +18,11 @@ h1 {
     font-size: 2rem;
     margin-bottom: 24px;
 }
+
+.mt-2 {
+    display: flex;
+}
+
+.mt-2 p-button:nth-child(2) {
+    margin-left: 10px;
+}
