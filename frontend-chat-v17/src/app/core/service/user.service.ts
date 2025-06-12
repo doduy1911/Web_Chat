@@ -8,7 +8,8 @@ import { environment } from "../../../environments/environment";
   providedIn: 'root'
 })
 export class UserService {
-  private apiUrl = environment.apiUrl + environment.apiVersion + "users"
+  private apiUrl = environment.apiUrl + environment.apiVersion + "/users"
+  private apiregister = environment.apiUrl + environment.apiVersion + "/register"
 
   constructor(
     private http: HttpClient
@@ -27,7 +28,7 @@ export class UserService {
     const jsonData = JSON.stringify(userRegister); // Chuyển thành chuỗi JSON
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
 
-    return this.http.post<User>(this.apiUrl, jsonData, { headers })
+    return this.http.post<User>(this.apiregister, jsonData, { headers })
   }
 
   saveToLocalStorage(user: User) {

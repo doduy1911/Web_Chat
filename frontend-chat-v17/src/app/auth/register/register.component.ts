@@ -23,8 +23,11 @@ export class RegisterComponent {
 
     this.userService.register(this.userRegister).subscribe({
       next: (response: User) => {
-        console.log(response)
-      }
+        console.log("thành coong")
+      },
+      error:(err) =>{
+        console.error("looix",err)
+    }
 
     })
 
