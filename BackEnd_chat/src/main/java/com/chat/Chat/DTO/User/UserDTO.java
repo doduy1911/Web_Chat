@@ -1,4 +1,4 @@
-package com.chat.Chat.DTO;
+package com.chat.Chat.DTO.User;
 
 import com.chat.Chat.Enum.UserStatus;
 import lombok.Data;
