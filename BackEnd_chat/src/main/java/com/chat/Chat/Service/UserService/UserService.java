@@ -5,5 +5,5 @@ import com.chat.Chat.Entity.User;
 import org.springframework.web.bind.annotation.RequestBody;
 
 public interface UserService {
-     User addUser(RegisterDTO registerDTO);
+    User addUser(RegisterDTO registerDTO);
 }
